@@ -1,0 +1,12 @@
+from tkinter import *
+window=Tk()
+l1=Label(window,text="Computer Science Cources:")
+l1.pack()
+lst=Listbox(window)
+lst.insert(0,"BCS")
+lst.insert(0,"BTech")
+lst.insert(0,"BCA")
+lst.insert(0,"MCS")
+lst.insert(0,"MCA")
+lst.pack()
+window.mainloop()

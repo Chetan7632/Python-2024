@@ -1,0 +1,21 @@
+from tkinter import *
+def add():
+    val=t1.get()
+    lst.insert(0,val)
+def delitem():
+    lst.delete(lst.curselection())
+window=Tk()
+l1=Label(window,text="Enter Item:")
+t1=Entry(window)
+l2=Label(window,text="Enter All Item:")
+lst=Listbox(window)
+b1=Button(window, text="Add", command=add)
+b2=Button(window, text="Remove", command=delitem)
+b3=Button(window, text="print")
+l1.grid(row=0,column=0)
+t1.grid(row=0,column=1)
+l1.grid(row=1,column=0)
+lst.grid(row=1,column=1)
+b1.grid(row=2,column=0)
+b2.grid(row=2,column=1)
+window.mainloop()
